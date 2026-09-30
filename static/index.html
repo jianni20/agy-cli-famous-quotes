@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Famous Quotes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>&#10077; Famous Quotes</h1>
+
+    <div id="quote-card" class="quote-card">
+      <blockquote id="quote-text">Loading&hellip;</blockquote>
+      <p id="quote-author" class="author"></p>
+      <p id="quote-categories" class="categories"></p>
+    </div>
+
+    <div class="controls">
+      <div class="filter-row">
+        <input
+          type="text"
+          id="authorInput"
+          list="authorList"
+          placeholder="Filter by author&hellip;"
+          autocomplete="off"
+        />
+        <datalist id="authorList"></datalist>
+
+        <input
+          type="text"
+          id="categoryInput"
+          list="categoryList"
+          placeholder="Filter by category&hellip;"
+          autocomplete="off"
+        />
+        <datalist id="categoryList"></datalist>
+      </div>
+
+      <div class="button-row">
+        <button id="newBtn">New Quote</button>
+        <button id="clearBtn" class="secondary">Clear Filters</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
